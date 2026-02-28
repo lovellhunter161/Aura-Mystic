@@ -6,7 +6,7 @@ import About from './pages/About';
 
 export default function App() {
   return (
-    <BrowserRouter> basename="/Aura-Mystic/">
+    <BrowserRouter> basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
